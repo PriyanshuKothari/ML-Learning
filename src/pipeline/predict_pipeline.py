@@ -9,29 +9,23 @@ import os
 class PredictPipeline:
     def __init__(self):
         pass
-    
-    
-    import os
-import sys
-from src.exception import CustomException
-from src.utils import load_object
 
-def predict(self, features):
-    try:
-        # Use os.path.join for cross-platform compatibility
-        model_path = os.path.join("artifacts", "model.pkl")
-        preprocessor_path = os.path.join("artifacts", "preprocessor.pkl")
+    def predict(self, features):
+        try:
+            # Use os.path.join for cross-platform compatibility
+            model_path = os.path.join("artifacts", "model.pkl")
+            preprocessor_path = os.path.join("artifacts", "preprocessor.pkl")
 
-        model = load_object(file_path=model_path)
-        preprocessor = load_object(file_path=preprocessor_path)
+            model = load_object(file_path=model_path)
+            preprocessor = load_object(file_path=preprocessor_path)
 
-        data_scaled = preprocessor.transform(features)
-        preds = model.predict(data_scaled)
+            data_scaled = preprocessor.transform(features)
+            preds = model.predict(data_scaled)
 
-        return preds
+            return preds
 
-    except Exception as e:
-        raise CustomException(e, sys)
+        except Exception as e:
+            raise CustomException(e, sys)
 
 
 class customeData:
