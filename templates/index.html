@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Exam Performance Predictor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 40px 20px 20px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #2575fc;
+      background-color: #fff;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #f1f1f1;
+      transform: scale(1.05);
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .models {
+      margin-top: 30px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      display: inline-block;
+      text-align: left;
+    }
+
+    .models h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .models ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .models li {
+      font-size: 1rem;
+      margin: 8px 0;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .models li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #00ffcc;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 15px;
+      font-size: 0.9rem;
+      background-color: rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to the home page</h1>
-    
+  <header>
+    <h1>🎓 Student Exam Performance Predictor</h1>
+    <p>
+      This project uses Machine Learning to predict a student’s <b>Math Score</b> 
+      based on features like reading, writing, education background, and more.
+      Multiple algorithms were tested, and the best-performing one is used to give predictions.
+    </p>
+    <a href="/predictdata" class="btn">Start Prediction 🚀</a>
+  </header>
+
+  <div class="content">
+    <div class="models">
+      <h2>🧠 Machine Learning Models Used</h2>
+      <p>We experimented with multiple models to ensure accurate predictions:</p>
+      <ul>
+        <li>Random Forest Regressor</li>
+        <li>Decision Tree Regressor</li>
+        <li>Gradient Boosting Regressor</li>
+        <li>Linear Regression</li>
+        <li>K-Neighbors Regressor</li>
+        <li>XGBRegressor</li>
+        <li>CatBoost Regressor</li>
+        <li>AdaBoost Regressor</li>
+      </ul>
+      <p>
+        ✅ The best-performing model is automatically selected and saved for final prediction.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    Built with ❤️ using Python, Flask, and Machine Learning
+  </footer>
 </body>
 </html>
