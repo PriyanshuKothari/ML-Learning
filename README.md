@@ -25,7 +25,7 @@ It is my first end-to-end Machine Learning project, where I built, trained, and 
 
 - HTML, CSS (for simple frontend UI)
 
-- Deployment: 
+- Deployment: Render
 ---
 ## 🎯 Key Learnings
 
@@ -48,7 +48,7 @@ It is my first end-to-end Machine Learning project, where I built, trained, and 
 - Improved my understanding of model selection and hyperparameter tuning.
 ---
 ## 🌐 Live Demo
-[Live Demo]()
+[Live Demo](https://student-exam-performance-indicator-71k0.onrender.com)
 ---
 ## 📸 Screenshots
 
